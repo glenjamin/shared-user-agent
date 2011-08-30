@@ -9,11 +9,11 @@ try:
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((HOST, PORT))
-    sock.send(data + "\n")
+    sock.send(url + "\n")
     received = sock.recv(1024)
     sock.close()
 
-    print "Sent:     %s" % data
+    print "Sent:     %s" % url
     print "Received: %s" % received
 except Exception, ex:
     sys.stderr.write(str(ex))
