@@ -25,4 +25,4 @@ Copy `settings.py.sample` to `settings.py` and fill in the relevent host/port.
 
 Then simply set up the following as your default browser:
 
-    python client.py <url>
+    /path/to/client.py <url>
